@@ -1,90 +1,154 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio: Aniket Singh</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!--Navigation Bar-->
-        <section id="navbar">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Aniket Singh — computer science, art, animation, and things I build.">
+
+    <title>Aniket Singh — Personal Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Ani.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#interests">Interests</a>
+                <a href="#work">Work</a>
+                <a href="resume.html">Resume ↗</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="hero">
+            <p >CS STUDENT · CREATIVE EXPLORER</p>
+
+            <h1>
+                Hey, I'm Aniket.<br>
+                I like making things.
+            </h1>
+
+            <p>
+                I'm a computer science student at the University of Cincinnati,
+                interested in technology, art, animation, and the space
+                where creativity meets code.
+            </p>
+
+            <a href="#about">A little about me ↓</a>
         </section>
-        
-        <!--The About Me section will include a brief introduction about Aniket Singh, his background, and his interests.-->
-        <section>
-            <h1>About Me</h1>
-            <p>I am Aniket singh, currently a sophomore at the university of Cincinnati studyin computer Science.
-                I have a strong foundation in programming languages such as Python, JavaScript, and Java. 
+
+        <!-- About Me -->
+        <section >
+            <p class="eyebrow">01 / WHO I AM</p>
+
+            <h2>A little about me.</h2>
+
+            <p>
+                I'm a sophomore studying computer science at the
+                University of Cincinnati. I enjoy learning how things
+                work, experimenting with ideas, and building things
+                that are both useful and interesting.
+            </p>
+
+            <p>
+                Outside of coding, I'm interested in art, illustration,
+                animation, and visual design. I like exploring different
+                ways to express ideas, whether that's through a program,
+                a canvas, or something interactive.
+            </p>
+        </section>
+
+        <!-- Interests -->
+        <section id="interests" class="content-section">
+            <p class="eyebrow">02 / THINGS I LIKE</p>
+
+            <h2>Beyond the code.</h2>
+
+            <div class="interest-grid">
+
+                <article class="interest-card">
+                    <h3>Art & Illustration</h3>
+                    <p>
+                        Sketches, colors, visual experiments, and
+                        making things just because.
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <h3>Animation</h3>
+                    <p>
+                        Movement, visual storytelling, and bringing
+                        ideas to life frame by frame.
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <h3>Technology</h3>
+                    <p>
+                        Software, web development, engineering,
+                        and projects that challenge me to learn.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section id="work" class="content-section">
+            <p class="eyebrow">03 / THINGS I'VE BUILT</p>
+
+            <h2>A few things I've worked on.</h2>
+
+            <article class="project">
+                <h3>VoxVitals</h3>
+                <p>
+                    A hackathon project exploring voice-based
+                    check-ins and AI-assisted insights for clinical trials.
                 </p>
+                <p class="project-tags">
+                    Web Development · AI · Hackathon
+                </p>
+            </article>
 
-             <p>I am also interested in arts and creatives, and with this, I enjoy blending creativity with technology.</p>
+            <article class="project">
+                <h3>ESP32 Multithreading</h3>
+                <p>
+                    Exploring concurrent tasks, synchronization,
+                    and embedded programming with the ESP32.
+                </p>
+                <p class="project-tags">
+                    C++ · FreeRTOS · Embedded Systems
+                </p>
+            </article>
+
+            <a href="resume.html" class="text-link">
+                More about my experience →
+            </a>
         </section>
 
-        <!--The Projects section will showcase some of Aniket Singh's work, including descriptions and links to the projects.-->
-        <section>
-            <h1>Projects</h1>
+    </main>
 
-            <h3>Store Management System | Python</h3>
-            <p>March 2025 -May 2025</p>
-            <ul>
-                <li>Developed a Python-based store management system to handle inventory tracking, receipt generation, and file-based data storage</li>
-                <li>Implemented modular program structure for scalable inventory management</li>
-            </ul>
+    <!-- Footer -->
+    <footer>
+        <p>Made by Aniket · © 2026</p>
+        <div>
+            <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR-USERNAME/">LinkedIn</a>
+            <a href="mailto:YOUR-EMAIL">Email</a>
+        </div>
+    </footer>
 
-            <h3>Gym Membership GUI | Java</h3>
-            <p>November 2024 - February 2025</p>
-            <ul>
-                <li>Built a Java-based GUI application for gym membership management</li>
-                <li>Debugged and optimized application logic to ensure reliable program execution</li>
-            </ul>
-
-            <h3>E-Shopping Website | HTML & CSS</h3>
-            <p>November 2024 - February 2025</p>
-            <ul>
-                <li>Led a team of five in developing a responsive e-commerce website for watch products</li>
-                <li>Designed and built 6 responsive pages using HTML and CSS with consistent layouts and styling</li>
-            </ul> 
-        </section>
-
-        <!--The Contact Information section will provide ways for visitors to get in touch with Aniket Singh, such as email and social media links.-->
-        <section>
-             <h1>Activities</h1>
-
-            <h3>Rocketry Club | Club Member | University of Cincinnati</h3>
-            <p>January 2026 - Present</p>
-            <ul>
-                <li>Developed and tested avionics code with software integration for a two-stage rocket</li>
-            </ul>
-
-            <h3>Nepal Student Association | Executive Board Member | University of Cincinnati</h3>
-            <p>September 2025 - Present</p>
-            <ul>
-                <li>Assisted in organizing cultural events for 100+ attendees</li>
-            </ul>
-
-            <h3>Northmandu Toastmasters Club | Club Member | Nepal</h3>
-            <p>September 2024 - August 2025</p>
-            <ul>
-                <li>Served as Master of Ceremonies for multiple Toastmasters meetings, developing public speaking and leadership skills</li>
-            </ul>
-        </section>
-
-        <!--This includes my Skills-->
-        <Section>
-            <h1>Skills</h1>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, Java, C++</li>
-                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
-                <li><strong>Tools:</strong> Version Control (Git), SQL, LabVIEW, Onshape, Microsoft Office (Word, Excel, PowerPoint)</li>
-                <li><strong>Design:</strong> Digital Illustration (Krita), Design (Figma)</li>
-            </ul>
-        </Section>
-
-    </body>
+</body>
 </html>
