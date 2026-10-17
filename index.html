@@ -18,7 +18,7 @@
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <a class="logo" href="index.html">Ani.</a>
+            <a class="logo" href="index.html">Ani<span class="dot">.</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="#about">About</a>
@@ -33,11 +33,11 @@
 
         <!-- Introduction -->
         <section class="hero">
-            <p >CS STUDENT · CREATIVE EXPLORER</p>
+            <p class="eyebrow">CS STUDENT · CREATIVE EXPLORER</p>
 
             <h1>
                 Hey, I'm Aniket.<br>
-                I like making things.
+                <span class="highlight">I like making things.</span>
             </h1>
 
             <p>
@@ -50,29 +50,91 @@
         </section>
 
         <!-- About Me -->
-        <section >
+        <section id="about" class="content-section">
             <p class="eyebrow">01 / WHO I AM</p>
 
             <h2>A little about me.</h2>
+            
+            <div class="about-layout">
+                <div class="about-text">
+                    <p>
+                        I'm a sophomore studying computer science at the
+                        University of Cincinnati. I enjoy learning how things
+                        work, experimenting with ideas, and building things
+                        that are both useful and interesting.
+                    </p>
 
-            <p>
-                I'm a sophomore studying computer science at the
-                University of Cincinnati. I enjoy learning how things
-                work, experimenting with ideas, and building things
-                that are both useful and interesting.
-            </p>
-
-            <p>
-                Outside of coding, I'm interested in art, illustration,
-                animation, and visual design. I like exploring different
-                ways to express ideas, whether that's through a program,
-                a canvas, or something interactive.
-            </p>
+                    <p>
+                        Outside of coding, I'm interested in art, illustration,
+                        animation, and visual design. I like exploring different
+                        ways to express ideas, whether that's through a program,
+                        a canvas, or something interactive.
+                    </p>
+                </div>
+                <img class="about-photo" src="assets/aniket.jpg" alt="Aniket Singh">
+            </div>
         </section>
+
+        <!-- Projects -->
+        <section id="work" class="content-section">
+            <p class="eyebrow">02 / THINGS I'VE BUILT</p>
+
+            <h2>A few things I've worked on.</h2>
+
+            <div class="project-grid">
+
+                <article class="project">
+                    <h3>Portfolio Website</h3>
+                    <p class="project-status">In Progress</p>
+                    <p>
+                        This website! Built with HTML, CSS, and a bit of
+                        JavaScript to showcase my work and interests.
+                    </p>
+                    <p class="project-tags">
+                        Web Development · HTML · CSS
+                    </p>
+                    <a href="index.html" class="text-link">View on GitHub →</a>
+                </article>
+
+                <article class="project">
+                    <h3>ESP32 Multithreading</h3>
+                    <p class="project-status">In Progress</p>
+                    <p>
+                        Exploring concurrent tasks, synchronization,
+                        and embedded programming with the ESP32.
+                    </p>
+                    <p class="project-tags">
+                        C++ · FreeRTOS · Embedded Systems
+                    </p>
+                    <a href="index.html" class="text-link">View on GitHub →</a>
+                </article>
+
+                <article class="project">
+                    <h3>L1 Rocket Certification</h3>
+                    <p class="project-status">In Progress</p>
+                    <p>
+                        Building and launching a model rocket as 
+                        part of the L1 certification process.
+                    </p>
+                    <p class="project-tags">
+                        Aerospace · Engineering · Model Rocketry
+                    </p>
+                </article>
+            </div>
+        
+                <h3>Earlier Projects</h3>
+                <ul class="project-list">
+                    <li><span class="project-name">Python Inventory System</span></li>
+                    <li><span class="project-name">Java Gym GUI</span></li>
+                    <li><span class="project-name">E-commerce Website</span></li>
+                </ul>
+
+        </section>
+
 
         <!-- Interests -->
         <section id="interests" class="content-section">
-            <p class="eyebrow">02 / THINGS I LIKE</p>
+            <p class="eyebrow">03 / THINGS I LIKE</p>
 
             <h2>Beyond the code.</h2>
 
@@ -105,38 +167,6 @@
             </div>
         </section>
 
-        <!-- Selected Work -->
-        <section id="work" class="content-section">
-            <p class="eyebrow">03 / THINGS I'VE BUILT</p>
-
-            <h2>A few things I've worked on.</h2>
-
-            <article class="project">
-                <h3>VoxVitals</h3>
-                <p>
-                    A hackathon project exploring voice-based
-                    check-ins and AI-assisted insights for clinical trials.
-                </p>
-                <p class="project-tags">
-                    Web Development · AI · Hackathon
-                </p>
-            </article>
-
-            <article class="project">
-                <h3>ESP32 Multithreading</h3>
-                <p>
-                    Exploring concurrent tasks, synchronization,
-                    and embedded programming with the ESP32.
-                </p>
-                <p class="project-tags">
-                    C++ · FreeRTOS · Embedded Systems
-                </p>
-            </article>
-
-            <a href="resume.html" class="text-link">
-                More about my experience →
-            </a>
-        </section>
 
     </main>
 
@@ -144,9 +174,9 @@
     <footer>
         <p>Made by Aniket · © 2026</p>
         <div>
-            <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+            <a href="https://github.com/aniuwho">GitHub</a>
             <a href="https://www.linkedin.com/in/YOUR-USERNAME/">LinkedIn</a>
-            <a href="mailto:YOUR-EMAIL">Email</a>
+            <a href="mailto:you@gmail.com">Email</a>
         </div>
     </footer>
 
