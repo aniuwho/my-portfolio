@@ -1,29 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
           content="Aniket Singh — computer science, art, animation, and things I build.">
-
     <title>Aniket Singh — Personal Website</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <a class="logo" href="index.html">Ani<span class="dot">.</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="#about">About</a>
-                <a href="#interests">Interests</a>
                 <a href="#work">Work</a>
+                <a href="#art">Art</a>
                 <a href="resume.html">Resume ↗</a>
             </div>
         </nav>
@@ -31,7 +30,7 @@
 
     <main>
 
-        <!-- Introduction -->
+        <!-- Hero -->
         <section class="hero">
             <p class="eyebrow">CS STUDENT · CREATIVE EXPLORER</p>
 
@@ -40,21 +39,20 @@
                 <span class="highlight">I like making things.</span>
             </h1>
 
-            <p>
+            <p class="hero-sub">
                 I'm a computer science student at the University of Cincinnati,
                 interested in technology, art, animation, and the space
                 where creativity meets code.
             </p>
 
-            <a href="#about">A little about me ↓</a>
+            <a href="#about" class="button">A little about me ↓</a>
         </section>
 
-        <!-- About Me -->
+        <!-- About -->
         <section id="about" class="content-section">
             <p class="eyebrow">01 / WHO I AM</p>
-
             <h2>A little about me.</h2>
-            
+
             <div class="about-layout">
                 <div class="about-text">
                     <p>
@@ -63,7 +61,6 @@
                         work, experimenting with ideas, and building things
                         that are both useful and interesting.
                     </p>
-
                     <p>
                         Outside of coding, I'm interested in art, illustration,
                         animation, and visual design. I like exploring different
@@ -78,99 +75,91 @@
         <!-- Projects -->
         <section id="work" class="content-section">
             <p class="eyebrow">02 / THINGS I'VE BUILT</p>
-
             <h2>A few things I've worked on.</h2>
 
             <div class="project-grid">
 
                 <article class="project">
-                    <h3>Portfolio Website</h3>
                     <p class="project-status">In Progress</p>
+                    <h3>Portfolio Website</h3>
                     <p>
                         This website! Built with HTML, CSS, and a bit of
                         JavaScript to showcase my work and interests.
                     </p>
-                    <p class="project-tags">
-                        Web Development · HTML · CSS
-                    </p>
-                    <a href="index.html" class="text-link">View on GitHub →</a>
+                    <p class="project-tags">Web Development · HTML · CSS</p>
+                    <a href="https://github.com/aniuwho/REPO-NAME" class="text-link">View on GitHub →</a>
                 </article>
 
                 <article class="project">
-                    <h3>ESP32 Multithreading</h3>
                     <p class="project-status">In Progress</p>
+                    <h3>ESP32 Multithreading</h3>
                     <p>
                         Exploring concurrent tasks, synchronization,
                         and embedded programming with the ESP32.
                     </p>
-                    <p class="project-tags">
-                        C++ · FreeRTOS · Embedded Systems
-                    </p>
-                    <a href="index.html" class="text-link">View on GitHub →</a>
+                    <p class="project-tags">C++ · FreeRTOS · Embedded Systems</p>
+                    <a href="https://github.com/aniuwho/REPO-NAME" class="text-link">View on GitHub →</a>
                 </article>
 
                 <article class="project">
-                    <h3>L1 Rocket Certification</h3>
                     <p class="project-status">In Progress</p>
+                    <h3>L1 Rocket Certification</h3>
                     <p>
-                        Building and launching a model rocket as 
-                        part of the L1 certification process.
+                        Building and launching a rocket as part of
+                        the L1 certification process.
                     </p>
-                    <p class="project-tags">
-                        Aerospace · Engineering · Model Rocketry
-                    </p>
+                    <p class="project-tags">Aerospace · Engineering · Rocketry</p>
                 </article>
-            </div>
-        
-                <h3>Earlier Projects</h3>
-                <ul class="project-list">
-                    <li><span class="project-name">Python Inventory System</span></li>
-                    <li><span class="project-name">Java Gym GUI</span></li>
-                    <li><span class="project-name">E-commerce Website</span></li>
-                </ul>
 
+            </div>
+
+            <h3 class="earlier-heading">Earlier Projects</h3>
+            <ul class="project-list">
+                <li>
+                    <span class="project-name">Python Inventory System</span>
+                    <span class="project-tags">Python</span>
+                </li>
+                <li>
+                    <span class="project-name">Java Gym GUI</span>
+                    <span class="project-tags">Java</span>
+                </li>
+                <li>
+                    <span class="project-name">E-commerce Website</span>
+                    <span class="project-tags">HTML, CSS, JavaScript</span>
+                </li>
+            </ul>
         </section>
 
-
-        <!-- Interests -->
-        <section id="interests" class="content-section">
-            <p class="eyebrow">03 / THINGS I LIKE</p>
-
+        <!-- Art -->
+        <section id="art" class="content-section">
+            <p class="eyebrow">03 / ART</p>
             <h2>Beyond the code.</h2>
+            <p class="section-intro">
+                Sketches, colors, visual experiments, and making things just because.
+            </p>
 
-            <div class="interest-grid">
-
-                <article class="interest-card">
-                    <h3>Art & Illustration</h3>
-                    <p>
-                        Sketches, colors, visual experiments, and
-                        making things just because.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Animation</h3>
-                    <p>
-                        Movement, visual storytelling, and bringing
-                        ideas to life frame by frame.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Technology</h3>
-                    <p>
-                        Software, web development, engineering,
-                        and projects that challenge me to learn.
-                    </p>
-                </article>
-
+            <div class="art-strip">
+                <figure class="art-item">
+                    <img src="assets/art1.jpg" alt="Describe the piece">
+                    <figcaption>Title · 2026</figcaption>
+                </figure>
+                <figure class="art-item">
+                    <img src="assets/art2.jpg" alt="Describe the piece">
+                    <figcaption>Title · 2026</figcaption>
+                </figure>
+                <figure class="art-item">
+                    <img src="assets/art3.jpg" alt="Describe the piece">
+                    <figcaption>Title · 2026</figcaption>
+                </figure>
+                <figure class="art-item">
+                    <img src="assets/art4.jpg" alt="Describe the piece">
+                    <figcaption>Title · 2026</figcaption>
+                </figure>
             </div>
         </section>
-
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>Made by Aniket · © 2026</p>
         <div>
@@ -180,5 +169,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
