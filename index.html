@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Aniket Singh — computer science, art, animation, and things I build.">
+    <meta name="description" content="Aniket Singh — computer science, art, animation, and things I build.">
     <title>Aniket Singh — Personal Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -81,91 +83,141 @@
 
                 <article class="project">
                     <p class="project-status">In Progress</p>
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        This website! Built with HTML, CSS, and a bit of
-                        JavaScript to showcase my work and interests.
-                    </p>
-                    <p class="project-tags">Web Development · HTML · CSS</p>
+                    <h3>Lumen</h3>
+                    <ul>
+                        <li>Building a video streaming web app in React.</li>
+                        <li>Designing the interface as reusable components that adapt to different screen sizes.</li>
+                        <!-- TODO: add what actually works (playback / browsing / search) and the API or data source -->
+                    </ul>
+                    <p class="project-tags">React · JavaScript · Web Development</p>
                     <a href="https://github.com/aniuwho/REPO-NAME" class="text-link">View on GitHub →</a>
                 </article>
 
                 <article class="project">
-                    <p class="project-status">In Progress</p>
-                    <h3>ESP32 Multithreading</h3>
-                    <p>
-                        Exploring concurrent tasks, synchronization,
-                        and embedded programming with the ESP32.
-                    </p>
+                    <p class="project-status">Completed</p>
+                    <h3>ESP32 Blinker</h3>
+                    <ul>
+                        <li>Programmed an ESP32 to run two independent tasks at once, one on each of its two cores.</li>
+                        <li>Worked out how core assignment, task scheduling, and multithreading behave on embedded
+                            hardware.</li>
+                        <li>Verified concurrent execution by running the tasks at independent intervals.</li>
+                    </ul>
                     <p class="project-tags">C++ · FreeRTOS · Embedded Systems</p>
                     <a href="https://github.com/aniuwho/REPO-NAME" class="text-link">View on GitHub →</a>
                 </article>
 
                 <article class="project">
-                    <p class="project-status">In Progress</p>
+                    <p class="project-status">Completed</p>
                     <h3>L1 Rocket Certification</h3>
-                    <p>
-                        Building and launching a rocket as part of
-                        the L1 certification process.
-                    </p>
-                    <p class="project-tags">Aerospace · Engineering · Rocketry</p>
-                    <a href="https://github.com/aniuwho/REPO-NAME" class="text-link">No GitHub</a>
+                    <ul>
+                        <li>Designed, built, and flew a high-power rocket to earn Level 1 certification.</li>
+                        <li>Wired and integrated the onboard electronics, including a StratoLogger altimeter for
+                            recording flight data.</li>
+                        <li>Analyzed the post-flight data after the certification flight.</li>
+                        <li>Finished the build and flight alongside a full course load.</li>
+                        <!-- TODO: add apogee (ft) and deployment timing once you confirm them -->
+                    </ul>
+                    <p class="project-tags">Hardware · Avionics · Rocketry</p>
                 </article>
+
 
             </div>
 
             <h3 class="earlier-heading">Earlier Projects</h3>
-            <ul class="project-list">
-                <li>
+
+            <article class="earlier-entry">
+                <div class="earlier-header">
+                    <span class="project-name">Prototype Mover Robot</span>
+                    <span class="project-tags">LabVIEW · Robotics</span>
+                </div>
+                <ul>
+                    <li>Led a team of three to design and build an autonomous robot as a class project (Feb – Apr 2026).
+                    </li>
+                    <li>The robot followed lines, picked up objects, identified their contents, and delivered them to
+                        designated stations.</li>
+                    <li>Implemented sensor-driven navigation and control logic in LabVIEW for real-time task execution.
+                    </li>
+                    <li>Divided the work among teammates and tested each part before putting the full robot together.
+                    </li>
+                    <!-- TODO: add how the program was structured and the result (runs completed / placement) -->
+                </ul>
+            </article>
+
+            <article class="earlier-entry">
+                <div class="earlier-header">
                     <span class="project-name">Python Inventory System</span>
                     <span class="project-tags">Python</span>
-                </li>
-                <li>
+                </div>
+                <ul>
+                    <li>Built a program to track and manage inventory items.</li>
+                    <li>Wrote functions to add, remove, update, and search for items.</li>
+                    <li>Organized item data with Python data structures such as lists and dictionaries.</li>
+                    <li>Handled user input so the program could be run from a simple menu.</li>
+                </ul>
+            </article>
+
+            <article class="earlier-entry">
+                <div class="earlier-header">
                     <span class="project-name">Java Gym GUI</span>
                     <span class="project-tags">Java</span>
-                </li>
-                <li>
-                    <span class="project-name">E-commerce Website</span>
-                    <span class="project-tags">HTML, CSS, JavaScript</span>
-                </li>
-            </ul>
+                </div>
+                <ul>
+                    <li>Built a desktop application with a graphical interface for managing a gym.</li>
+                    <li>Applied object-oriented design by modeling real things, like members, as classes.</li>
+                    <li>Responded to button clicks and form input with event handling.</li>
+                    <li>Practiced structuring a larger program across multiple classes.</li>
+                </ul>
+            </article>
+
+            <article class="earlier-entry">
+                <div class="earlier-header">
+                    <span class="project-name">Watch E-commerce Website</span>
+                    <span class="project-tags">HTML · CSS · JavaScript</span>
+                </div>
+                <ul>
+                    <li>Built a multi-page online store for watches as a high school project.</li>
+                    <li>Laid out product pages with HTML and CSS so every page shared a consistent look.</li>
+                    <li>Added interactivity with JavaScript.</li>
+                    <li>Practiced designing a site from a user's point of view, from browsing to checkout.</li>
+                </ul>
+            </article>
         </section>
 
-        <!-- Art -->
-        <section id="art" class="content-section">
-            <p class="eyebrow">03 / ART</p>
-            <h2>Beyond the code.</h2>
-            <p class="section-intro">
-                Sketches, colors, visual experiments, and making things just because.
-            </p>
+            <!-- Art -->
+            <section id="art" class="content-section">
+                <p class="eyebrow">03 / ART</p>
+                <h2>Beyond the code.</h2>
+                <p class="section-intro">
+                    Sketches, colors, visual experiments, and making things just because.
+                </p>
 
-            <div class="art-grid">
-                <figure class="art-item">
-                    <img src="assets/art/T0.jpg" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="assets/art/T1.jpg" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="assets/art/T2.jpg" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="assets/art/T3.png" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="assets/art/T4.png" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="assets/art/T5.png" alt="Describe the piece" loading="lazy">
-                    <figcaption>Title · 2026</figcaption>
-                </figure>
-            </div>
-        </section>
+                <div class="art-grid">
+                    <figure class="art-item">
+                        <img src="assets/art/T0.jpg" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                    <figure class="art-item">
+                        <img src="assets/art/T1.jpg" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                    <figure class="art-item">
+                        <img src="assets/art/T2.jpg" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                    <figure class="art-item">
+                        <img src="assets/art/T3.png" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                    <figure class="art-item">
+                        <img src="assets/art/T4.png" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                    <figure class="art-item">
+                        <img src="assets/art/T5.png" alt="Describe the piece" loading="lazy">
+                        <figcaption>Title · 2026</figcaption>
+                    </figure>
+                </div>
+            </section>
 
     </main>
 
@@ -181,4 +233,5 @@
     </footer>
 
 </body>
+
 </html>

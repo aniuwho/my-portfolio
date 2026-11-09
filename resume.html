@@ -1,28 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
           content="Aniket Singh — computer science, art, animation, and things I build.">
-
     <title>Aniket Singh — Resume</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar">
-            <a class="logo" href="index.html">Aniket Singh</span></a>
+            <a class="logo" href="index.html">Aniket Singh</a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#art">Art</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#art">Art</a>
                 <a href="resume.html">Resume ↗</a>
             </div>
         </nav>
@@ -30,23 +30,36 @@
 
     <main class="resume">
 
-        
-
         <!-- Header -->
         <section class="resume-header">
             <div class="resume-top">
                 <div>
                     <h1>Aniket Singh</h1>
-                    <p class="resume-role">Computer Science Student · Expected May 20XX</p>
+                    <p class="resume-role">Computer Science Student · Graduating 2030</p>
                 </div>
                 <a href="Aniket-Singh-Resume.pdf" download class="button">Download PDF</a>
             </div>
 
             <p class="resume-contact">
-                <a href="mailto:YOUR-EMAIL">YOUR-EMAIL</a>
+                <span>Cincinnati, OH</span>
+                <a href="mailto:singh7ag@mail.uc.edu">singh7ag@mail.uc.edu</a>
+                <a href="https://www.linkedin.com/in/singhaniket49">linkedin.com/in/singhaniket49</a>
                 <a href="https://github.com/aniuwho">github.com/aniuwho</a>
-                <a href="https://www.linkedin.com/in/YOUR-USERNAME/">linkedin.com/in/YOUR-USERNAME</a>
             </p>
+
+            <p class="resume-availability">Available for co-op: Summer 2027</p>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+            <h2 class="resume-heading">Education</h2>
+            <article class="resume-entry">
+                <div class="entry-header">
+                    <h3>University of Cincinnati, Cincinnati, Ohio</h3>
+                    <span class="entry-date">Graduating: 2030</span>
+                </div>
+                <p class="entry-sub">Bachelor of Science, Computer Science · GPA: 3.89</p>
+            </article>
         </section>
 
         <!-- Projects -->
@@ -55,80 +68,93 @@
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>Portfolio Website</h3>
-                    <span class="entry-date">Aug 2026 – Present</span>
+                    <h3>Lumen</h3>
+                    <span class="entry-date">September 2026 – Present</span>
                 </div>
-                <p class="entry-sub">HTML · CSS · JavaScript</p>
+                <p class="entry-sub">React</p>
                 <ul>
-                    <li>Designed and built a responsive personal website from scratch, using flexbox and grid for layout.</li>
-                    <li>Managed the project with Git and GitHub.</li>
+                    <li>Building a video streaming web app in React with a component-based, responsive UI.</li>
+                    <!-- TODO: add a bullet on what actually works (playback / browsing / search) and the API or data source -->
                 </ul>
             </article>
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>Level 1 Rocketry Certification</h3>
-                    <span class="entry-date">Sep 2026 – Present</span>
+                    <h3>ESP32 Blinker</h3>
+                    <span class="entry-date">October 2026</span>
                 </div>
-                <p class="entry-sub">Hardware · Rocketry</p>
+                <p class="entry-sub">Embedded System</p>
                 <ul>
-                    <li>Building a rocket to meet Level 1 certification requirements, with flights reaching up to 600 m.</li>
+                    <li>Programmed an ESP32 to run two independent tasks concurrently, one on each of its two cores.</li>
+                    <li>Worked out how core assignment, task scheduling, and multithreading behave on embedded hardware.</li>
+                    <li>Verified concurrent execution by running tasks at independent intervals.</li>
                 </ul>
             </article>
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>ESP32 Multithreading</h3>
-                    <span class="entry-date">Sep 2026 – Present</span>
+                    <h3>L1 Rocket Certification</h3>
+                    <span class="entry-date">August 2026 – November 2026</span>
                 </div>
-                <p class="entry-sub">C++ · FreeRTOS · Embedded Systems</p>
+                <p class="entry-sub">Hardware and Embedded System</p>
                 <ul>
-                    <li>Teaching myself concurrent programming on embedded hardware, including running multiple tasks on an ESP32.</li>
-                    <li>Working through task scheduling and synchronization problems.</li>
+                    <li>Designed, built, and flew a high-power rocket to earn Level 1 certification.</li>
+                    <li>Wired and integrated the onboard electronics, including a StratoLogger altimeter for flight-data recording.</li>
+                    <!-- TODO: add a bullet on what the flight data showed (apogee in ft / deployment timing) -->
+                    <!-- TODO: add a bullet on the build timeline alongside coursework (how many months) -->
                 </ul>
             </article>
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>Line-Following Robot</h3>
-                    <span class="entry-date">20XX</span>
+                    <h3>Prototype Mover Robot</h3>
+                    <span class="entry-date">February 2026 – April 2026</span>
                 </div>
-                <p class="entry-sub">LabVIEW · Class Project</p>
+                <p class="entry-sub">LabVIEW</p>
                 <ul>
-                    <li>Programmed a line-following robot in LabVIEW for a class project.</li>
+                    <li>Led a team of three to design and build an autonomous robot for line following, object pickup, content identification, and delivery to designated stations.</li>
+                    <li>Implemented sensor-driven navigation and control logic in LabVIEW for real-time task execution.</li>
+                    <!-- TODO: add a bullet on how the program was structured (state machine / sequential tasks) -->
+                    <!-- TODO: add a bullet on the result (runs completed / placement) -->
+                </ul>
+            </article>
+        </section>
+
+        <!-- Involvement -->
+        <section class="resume-section">
+            <h2 class="resume-heading">Involvement</h2>
+
+            <article class="resume-entry">
+                <div class="entry-header">
+                    <h3>Rocketry Club</h3>
+                    <span class="entry-date">January 2026 – Present</span>
+                </div>
+                <p class="entry-sub">Club Member · University of Cincinnati</p>
+                <ul>
+                    <li>Developed and tested avionics code with software integration for a two-stage rocket.</li>
+                    <li>Developed code for a pyro technique pop test.</li>
                 </ul>
             </article>
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>Python Inventory System</h3>
-                    <span class="entry-date">20XX</span>
+                    <h3>Association of Computing Machinery</h3>
+                    <span class="entry-date">September 2025 – Present</span>
                 </div>
-                <p class="entry-sub">Python</p>
+                <p class="entry-sub">Executive Board Member · University of Cincinnati</p>
                 <ul>
-                    <li>Built an inventory tracking program in Python.</li>
+                    <li>Assisted in organizing cultural events for 100+ attendees.</li>
                 </ul>
             </article>
 
             <article class="resume-entry">
                 <div class="entry-header">
-                    <h3>Java Gym GUI</h3>
-                    <span class="entry-date">20XX</span>
+                    <h3>Nepal Student Association</h3>
+                    <span class="entry-date">September 2025 – Present</span>
                 </div>
-                <p class="entry-sub">Java</p>
+                <p class="entry-sub">Executive Board Member · University of Cincinnati</p>
                 <ul>
-                    <li>Built a desktop GUI application for gym management in Java.</li>
-                </ul>
-            </article>
-
-            <article class="resume-entry">
-                <div class="entry-header">
-                    <h3>Watch E-commerce Website</h3>
-                    <span class="entry-date">20XX</span>
-                </div>
-                <p class="entry-sub">HTML · CSS · JavaScript</p>
-                <ul>
-                    <li>Built a multi-page online store for watches as a high school project.</li>
+                    <li>Assisted in organizing cultural events for 100+ attendees.</li>
                 </ul>
             </article>
         </section>
@@ -137,28 +163,58 @@
         <section class="resume-section">
             <h2 class="resume-heading">Skills</h2>
             <dl class="skills-list">
-                <dt>Languages</dt>
-                <dd>Python, Java, C++, JavaScript, HTML, CSS</dd>
+                <dt>Programming Languages</dt>
+                <dd>Python, C++</dd>
+
+                <dt>Web Development</dt>
+                <dd>HTML, CSS, JavaScript, React</dd>
+
+                <dt>Embedded &amp; Hardware</dt>
+                <dd>ESP32, avionics integration, sensor and control logic</dd>
 
                 <dt>Tools</dt>
-                <dd>Git, GitHub, LabVIEW, VS Code</dd>
-
-                <dt>Learning</dt>
-                <dd>FreeRTOS, embedded systems, concurrency</dd>
+                <dd>Git, SQL, MATLAB, Onshape, Inventor, Microsoft Office (Word, Excel, PowerPoint), Krita (digital illustration), Figma (design)</dd>
             </dl>
         </section>
 
-        <!-- Education -->
+        <!-- Awards -->
         <section class="resume-section">
-            <h2 class="resume-heading">Education</h2>
-            <article class="resume-entry">
+            <h2 class="resume-heading">Awards, Honors &amp; Certificates</h2>
+
+            <article class="resume-entry compact">
                 <div class="entry-header">
-                    <h3>University of Cincinnati</h3>
-                    <span class="entry-date">Expected May 20XX</span>
+                    <h3>International Global Scholarship</h3>
+                    <span class="entry-date">August 2025 – Present</span>
                 </div>
-                <p class="entry-sub">Bachelor of Science in Computer Science</p>
+            </article>
+
+            <article class="resume-entry compact">
+                <div class="entry-header">
+                    <h3>International Outreach Scholarship</h3>
+                    <span class="entry-date">August 2025 – Present</span>
+                </div>
+            </article>
+
+            <article class="resume-entry compact">
+                <div class="entry-header">
+                    <h3>Java Object-Oriented Language, LinkedIn Learning Certificate</h3>
+                    <span class="entry-date">May 2025</span>
+                </div>
             </article>
         </section>
 
     </main>
+
+    <footer>
+        <div class="footer">
+            <p>Made by Aniket · © 2026</p>
+            <div>
+                <a href="https://github.com/aniuwho">GitHub</a>
+                <a href="https://www.linkedin.com/in/singhaniket49">LinkedIn</a>
+                <a href="mailto:singh7ag@mail.uc.edu">Email</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+</html>

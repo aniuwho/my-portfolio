@@ -419,6 +419,22 @@ section[id] {
     opacity:1;
 }
 
+
+
+.project ul {
+    margin: 0 0 1rem;
+    padding-left: 0.9rem;
+}
+
+.earlier-entry ul {
+    margin: 0.5rem 0 0;
+    padding-left: 0.9rem;
+    color: var(--muted-text);
+    font-size: 0.95rem;
+}
+
+
+
 footer {
     background: var(--surface);
     margin-top: 6rem;
@@ -459,3 +475,4 @@ footer {
    @media (hover: none) {
        .art-item figcaption { opacity: 1; }
    }
+
